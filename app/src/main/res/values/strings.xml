@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NavOfThrones</string>
+    <string name="stark">Stark</string>
+    <string name="targaryen">Targaryen</string>
+
+    <string name="aegon">Aegon</string>
+    <string name="promise_me_ned">Promise me, Ned</string>
+    <string name="jhon_snow">Jhon Snow</string>
+    <string name="prince">The principe that was promised.</string>
 </resources>
