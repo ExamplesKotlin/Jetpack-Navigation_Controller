@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.example.navofthrones.R
+import kotlinx.android.synthetic.main.main_fragment.*
 
 class MainFragment : Fragment() {
 
@@ -27,6 +29,15 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
+
+
+        starkButton.setOnClickListener {
+            view?.let {  Navigation.findNavController(it).navigate(R.id.lyannaFragment) }
+        }
+
+        targaryenButton.setOnClickListener {
+            view?.let { Navigation.findNavController(it).navigate(R.id.rhaegarFragment) }
+        }
     }
 
 }
