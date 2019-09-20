@@ -36,5 +36,10 @@
     <fragment
         android:id="@+id/jhonSnowFragment"
         android:name="com.example.navofthrones.ui.main.JhonSnowFragment"
-        android:label="JhonSnowFragment" />
+        android:label="JhonSnowFragment" >
+        <argument
+            android:name="whoami"
+            app:argType="string"
+            android:defaultValue="No one" />
+    </fragment>
 </navigation>
