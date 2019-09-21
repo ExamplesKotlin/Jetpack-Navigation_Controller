@@ -23,7 +23,11 @@
         android:label="LyannaFragment" >
         <action
             android:id="@+id/action_lyannaFragment_to_jhonSnowFragment"
-            app:destination="@id/jhonSnowFragment" />
+            app:destination="@id/jhonSnowFragment"
+            app:enterAnim="@anim/translate_in_up"
+            app:exitAnim="@anim/translate_out_up"
+            app:popEnterAnim="@anim/translate_in_down"
+            app:popExitAnim="@anim/translate_out_down" />
     </fragment>
     <fragment
         android:id="@+id/rhaegarFragment"
