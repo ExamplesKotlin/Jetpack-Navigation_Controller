@@ -29,7 +29,10 @@ class RhaegarFragment : Fragment() {
 
         // TODO: add click listener
         button.setOnClickListener {
-            view?.let { it -> Navigation.findNavController(it).navigate(R.id.jhonSnowFragment) }
+            view?.let { it ->
+                val action = RhaegarFragmentDirections.actionRhaegarFragmentToJhonSnowFragment()
+                action.setWhoami(getString(R.string.prince))
+                Navigation.findNavController(it).navigate(action) }
         }
     }
 }
