@@ -29,8 +29,9 @@ class LyannaFragment : Fragment() {
 
         // TODO: add click listener
         button.setOnClickListener {
-
-            view?.let { it -> Navigation.findNavController(it).navigate(R.id.jhonSnowFragment) }
+            val action = LyannaFragmentDirections.actionLyannaFragmentToJhonSnowFragment()
+            action.setWhoami(getString(R.string.jhon_snow))
+            view?.let { it -> Navigation.findNavController(it).navigate(action) }
         }
     }
 }
