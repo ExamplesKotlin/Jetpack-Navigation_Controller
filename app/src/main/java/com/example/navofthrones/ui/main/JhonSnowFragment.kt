@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.navofthrones.R
+import kotlinx.android.synthetic.main.jhon_snow_fragment.*
 
 class JhonSnowFragment : Fragment() {
 
@@ -26,5 +27,9 @@ class JhonSnowFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // TODO: add arguments
+        arguments?.let {
+            val safeArgs = JhonSnowFragmentArgs.fromBundle(it)
+            whoAmI.text = safeArgs.whoami
+        }
     }
 }
